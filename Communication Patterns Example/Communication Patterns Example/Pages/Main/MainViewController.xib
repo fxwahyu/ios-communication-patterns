@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Communication_Patterns_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="chooseDurationButton" destination="evQ-aF-Ve9" id="h2L-2o-sEq"/>
+                <outlet property="durationLabel" destination="Knp-2U-Vcm" id="3vp-ie-tYc"/>
+                <outlet property="page1Button" destination="5Hw-H1-jJB" id="9EX-GL-KPg"/>
+                <outlet property="page2Button" destination="9xi-Q0-DrG" id="foU-TD-xga"/>
+                <outlet property="startButton" destination="ZY2-UM-4Jk" id="apl-UR-BsV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dolphin wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="hCw-V9-Srw">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knp-2U-Vcm">
+                    <rect key="frame" x="130" y="259" width="133" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evQ-aF-Ve9">
+                    <rect key="frame" x="121.66666666666669" y="315" width="150" height="34.333333333333314"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Choose duration"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Choose duration">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="chooseDuration:" destination="-1" eventType="touchUpInside" id="67V-Yr-KlH"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nIK-hK-0li">
+                    <rect key="frame" x="121.66666666666669" y="518" width="150" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY2-UM-4Jk">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="WtW-5K-mtG"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="START">
+                                <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="startBilling:" destination="-1" eventType="touchUpInside" id="57U-kR-0cD"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-H1-jJB">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="yeS-9N-RBy"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Open Games">
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="baseBackgroundColor" red="0.0" green="0.45882352941176469" blue="0.8901960784313725" alpha="0.75164784816716679" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="openGame1:" destination="-1" eventType="touchUpInside" id="692-Ke-N4z"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-Q0-DrG">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="Xvl-Ly-Cbn"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Open Browser">
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="baseBackgroundColor" red="0.82352941176470584" green="0.63137254901960782" blue="0.41960784313725491" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="openGame2:" destination="-1" eventType="touchUpInside" id="uK3-Az-Ree"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="XFj-oQ-eEH"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hCw-V9-Srw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="33h-k2-JaH"/>
+                <constraint firstItem="evQ-aF-Ve9" firstAttribute="top" secondItem="Knp-2U-Vcm" secondAttribute="bottom" constant="8" id="F0a-85-YJ2"/>
+                <constraint firstItem="Knp-2U-Vcm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="G1s-Rf-PPl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nIK-hK-0li" secondAttribute="bottom" constant="150" id="IDb-0c-xfF"/>
+                <constraint firstItem="hCw-V9-Srw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Seb-gC-jLu"/>
+                <constraint firstItem="Knp-2U-Vcm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="TTq-CE-fN7"/>
+                <constraint firstItem="evQ-aF-Ve9" firstAttribute="centerX" secondItem="Knp-2U-Vcm" secondAttribute="centerX" id="ed2-FB-mV2"/>
+                <constraint firstItem="hCw-V9-Srw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jTc-8D-bgT"/>
+                <constraint firstAttribute="bottom" secondItem="hCw-V9-Srw" secondAttribute="bottom" id="m9J-tC-Fra"/>
+                <constraint firstItem="nIK-hK-0li" firstAttribute="centerX" secondItem="evQ-aF-Ve9" secondAttribute="centerX" id="p8c-Ru-zPq"/>
+            </constraints>
+            <point key="canvasLocation" x="138.1679389312977" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dolphin wallpaper" width="674" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

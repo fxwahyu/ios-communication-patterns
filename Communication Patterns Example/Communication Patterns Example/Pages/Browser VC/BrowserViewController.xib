@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowserViewController" customModule="Communication_Patterns_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="durationLabel" destination="jgo-aZ-ISi" id="NEB-XG-QLm"/>
+                <outlet property="loading" destination="toO-ZI-wiZ" id="SkX-TI-04n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webview" destination="nMu-d0-BJk" id="GNV-46-DfN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-d0-BJk">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-aZ-ISi">
+                    <rect key="frame" x="299.33333333333331" y="67" width="73.666666666666686" height="26.333333333333329"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="toO-ZI-wiZ">
+                    <rect key="frame" x="178" y="420" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.82352941176470584" green="0.63137254901960782" blue="0.41960784313725491" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="toO-ZI-wiZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="8t0-5M-6di"/>
+                <constraint firstItem="nMu-d0-BJk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HBd-dO-jxA"/>
+                <constraint firstItem="jgo-aZ-ISi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="LjD-EI-SiI"/>
+                <constraint firstAttribute="bottom" secondItem="nMu-d0-BJk" secondAttribute="bottom" id="U03-cE-wkb"/>
+                <constraint firstItem="nMu-d0-BJk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hFJ-bI-DQH"/>
+                <constraint firstItem="nMu-d0-BJk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="izy-K4-A7j"/>
+                <constraint firstItem="toO-ZI-wiZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="szx-ML-1NR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jgo-aZ-ISi" secondAttribute="trailing" constant="20" id="tCS-Ev-Sam"/>
+            </constraints>
+            <point key="canvasLocation" x="41.984732824427482" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>
